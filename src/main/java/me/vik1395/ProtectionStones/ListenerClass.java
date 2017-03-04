@@ -162,7 +162,7 @@ public class ListenerClass implements Listener {
                             e1.printStackTrace();
                         }
                         if (!p.hasPermission("protectionstones.admin")) {
-                            p.sendMessage(ChatColor.RED + "You can not a protection here as it overlaps another unowned region");
+                            p.sendMessage(ChatColor.BOLD + "[" + ChatColor.DARK_AQUA + "Esti" + ChatColor.GOLD + "Net" + ChatColor.RESET + "" + ChatColor.BOLD + "] " + ChatColor.RESET + "" + ChatColor.RED + "You can not a protection here as it overlaps another unowned region");
                             e.setCancelled(true);
                             return;
                         }						

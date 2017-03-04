@@ -227,7 +227,7 @@
                                 }
                             }
                         /***************/
-                            else if(args[0].equalsIgnoreCase("remove")) {
+                            if(args[0].equalsIgnoreCase("remove")) {
                                 if(p.hasPermission("protectionstones.members")) {
                                     if(args.length < 2) {
                                         p.sendMessage((new StringBuilder()).append(ChatColor.RED).append("This command requires a player name.").toString());
@@ -281,7 +281,7 @@
                                 }
                             }
                         /***************/
-                            if(args[0].equalsIgnoreCase("removeowner")) {
+                           if(args[0].equalsIgnoreCase("removeowner")) {
                                 if(p.hasPermission("protectionstones.owners")) {
                                     if(args.length < 2) {
                                         p.sendMessage((new StringBuilder()).append(ChatColor.RED).append("This command requires a player name.").toString());
@@ -307,7 +307,7 @@
                                 return true;
                             }
                         /***************/
-                            else if(args[0].equalsIgnoreCase("view")) {
+                            if(args[0].equalsIgnoreCase("view")) {
                                 if (p.hasPermission("protectionstones.view")) {
                                     if (!this.viewTaskList.isEmpty()) {
                                         int playerTask = 0;
@@ -473,7 +473,7 @@
                                 }
                                 return true;
                         /***************/
-                            } else if(args[0].equalsIgnoreCase("priority")) {
+                            } if(args[0].equalsIgnoreCase("priority")) {
                                 if (p.hasPermission("protectionstones.priority")) {
                                     if (args.length < 2) {
                                         int priority = rgm.getRegion(id).getPriority();

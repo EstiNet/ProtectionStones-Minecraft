@@ -1,0 +1,9 @@
+name: ProtectionStones
+main: main.java.me.vik1395.ProtectionStones.Main
+version: 1.0.0
+load: STARTUP
+commands:
+   protectionstones:
+     description: Protection Stones commands.
+     aliases: [ps]
+     usage: Syntax error! Do /ps help for help.
